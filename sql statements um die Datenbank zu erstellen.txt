@@ -1,0 +1,12 @@
+CREATE TABLE `dateiinfo` (
+ `filename` varchar(100) NOT NULL,
+ `hash` varchar(100) NOT NULL,
+ `password` varchar(100) NOT NULL,
+ `timeToLive` time NOT NULL,
+ PRIMARY KEY (`hash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+
+
+// Die Login Daten müssen in der Datei Core.php eingegeben werden
