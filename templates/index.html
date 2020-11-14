@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filehoster</title>
+    <!-- <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css"/>
+    <script src="/public/bootstrap/js/bootstrap.js"></script> -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/public/js/uploadData.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form id="data" action="uploadFile.php" method="post" enctype="multipart/form-data">
+                                <h3 class="text-center">Lade eine Datei hoch</h3>
+                                <div class="row">
+                                    Wähle eine Datei aus
+                                    <input type="file" class="btn btn-lg btn-primary w-100" style="height: 200px"
+                                           name="fileToUpload" id="fileToUpload">
+                                    <div class="w-100">
+                                    </div>
+                                </div>
+
+
+                                <div class="login-or">
+                                    <hr class="hr-or">
+                                </div>
+                                <div class="form-group">
+                                    <label>Speicherdauer (min)</label>
+                                    <input type="number" class="form-control" name="inputTime" id="inputTime" min="1"
+                                           max="60" placeholder="optional">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Passwort</label>
+                                    <input type="password" class="form-control" name="inputPassword" id="inputPassword"
+                                           placeholder="optional">
+                                </div>
+                                <button class="btn btn-primary" style="width: 100%;">Hochladen</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

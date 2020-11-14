@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download file</title>
+    <!-- <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css"/>
+    <script src="/public/bootstrap/js/bootstrap.js"></script> -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/public/js/uploadData.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <p><?=$name ?></p>
+
+                            <form id="data" action="" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="inputPassword">Passwort</label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                           placeholder="password">
+                                </div>
+
+                                <?=$wrongPassword?>
+
+                                <button class="btn btn-primary" style="width: 100%;">Herunterladen</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
